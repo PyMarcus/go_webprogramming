@@ -5,16 +5,16 @@ import (
 	"net/http"
 )
 
-type MyHandler struct{}
+func index(writer http.ResponseWriter, request *http.Request){
+	fmt.Fprint(writer, "OK")
+}
 
-func (h *MyHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "test")
-}
-func main() {
-	handler := MyHandler{}
-	server := http.Server{
-		Addr:    "127.0.0.1:8080",
-		Handler: &handler,
-	}
-	server.ListenAndServe()
-}
+// func main() {
+// 	server := http.Server{
+// 		Addr:    "127.0.0.1:8080",
+// 	}
+
+// 	http.HandleFunc("/", index)
+
+// 	server.ListenAndServe()
+// }
