@@ -18,3 +18,6 @@ web development with golang
 
 ![Alt text](image-3.png)
 
+### A tipical go web application structure:
+
+![Alt text](image-4.png)
