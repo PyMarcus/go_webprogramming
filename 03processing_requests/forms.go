@@ -37,11 +37,11 @@ func process2(writer http.ResponseWriter, request *http.Request){
 }
 
 
-func main(){
-	server := http.Server{
-		Addr: "localhost:8080",
-	}
-	http.HandleFunc("/process", process)
-	http.HandleFunc("/process2", process2)
-	server.ListenAndServe()
-}
+// func main(){
+// 	server := http.Server{
+// 		Addr: "localhost:8080",
+// 	}
+// 	http.HandleFunc("/process", process)
+// 	http.HandleFunc("/process2", process2)
+// 	server.ListenAndServe()
+// }
