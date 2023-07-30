@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Go Web Programming</title>
+</head>
+
+<body>
+    <div> This is t1.html before</div>
+    <div>This is the value of the dot in t1.html - [{{ . }}]</div>
+    <hr />
+    {{ template "to_include.html" . }}
+    <hr />
+    <div> This is t1.html after</div>
+</body>
+
+</html>
